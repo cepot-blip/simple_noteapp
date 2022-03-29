@@ -81,7 +81,7 @@ const Splash = () => {
           dengan berbagai tema dan lainnya .
         </h1>
 
-        <div className="mt-16 flex flex-col" ref={container2}></div>
+        <div className="mt-12 flex flex-col" ref={container2}></div>
 
         <div className="w-full h-12 flex justify-center items-center gap-4 mt-auto">
           <span className="bg-white/50 w-3 h-3 rounded-full"></span>
