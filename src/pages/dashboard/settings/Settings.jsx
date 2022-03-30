@@ -3,6 +3,16 @@ import { BiLogOut, BiReset } from "react-icons/bi";
 import { Modal } from "antd";
 
 const Settings = () => {
+  const Logout = () => {
+    Modal.confirm({
+      title: "Log-out",
+      content: "Apa anda ingin Log-out ?",
+      onOk: () => {
+        window.location.href = "/";
+      },
+    });
+  };
+
   const resetNote = () => {
     Modal.confirm({
       title: "Reset Note",
@@ -18,6 +28,7 @@ const Settings = () => {
       <button
         className="h-12 w-full flex justify-center items-center bg-blue-400 rounded-md gap-2 ml-auto text-white font-medium"
         type="submit"
+        onClick={Logout}
       >
         <BiLogOut className="text-3xl text-white" /> Log-out
       </button>
